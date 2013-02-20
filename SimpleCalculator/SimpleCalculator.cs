@@ -51,7 +51,6 @@ namespace SimpleCalculator
                 {
                     throw new Exception("Negative numbers detected, danger danger. The numbers are: " +
                                         split.Where(m => SafeParseInt(m) < 0)
-
                                              .Aggregate((current, result) => current + "," + result));
                                         //ReturnElems());
                 }
