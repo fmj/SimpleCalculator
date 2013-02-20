@@ -9,9 +9,21 @@ namespace SimpleCalculatorTest
     public class UnitTest1
     {
         [TestMethod]
+        public void TestDelimNumber()
+        {
+            Assert.AreEqual(_calc.Add("//[12][3]\n412537"), 16);
+        }
+
+        [TestMethod]
         public void TestMultipleNewDelims()
         {
             Assert.AreEqual(_calc.Add("//[*][%]\n1*2%3"),6);
+        }
+
+        [TestMethod]
+        public void TestMultipleLotsLongNewDelims()
+        {
+            Assert.AreEqual(_calc.Add("//[KodeCata][Per][Erik][Andreas]\n1Per2Erik3Andreas4KodeCata2"), 12);
         }
 
         [TestMethod]
@@ -27,7 +39,7 @@ namespace SimpleCalculatorTest
         [TestMethod]
         public void AddBigNumbers()
         {
-            Assert.AreEqual(_calc.Add("1000,1001,2,4"),6);
+            Assert.AreEqual(_calc.Add("1000,1001,2,4"),1006);
         }
         [TestMethod]
         public void AddNegativeNumberFail()

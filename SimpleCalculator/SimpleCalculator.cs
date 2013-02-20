@@ -50,10 +50,13 @@ namespace SimpleCalculator
                 else if (split.Count(m => SafeParseInt(m) < 0) > 0)
                 {
                     throw new Exception("Negative numbers detected, danger danger. The numbers are: " +
-                                        ReturnElems(split.Where(m => SafeParseInt(m) < 0).ToList()));
+                                        split.Where(m => SafeParseInt(m) < 0)
+
+                                             .Aggregate((current, result) => current + "," + result));
+                                        //ReturnElems());
                 }
                 else
-                    return split.Where(m => SafeParseInt(m) < 1000).Sum(m => SafeParseInt(m));
+                    return split.Where(m => SafeParseInt(m) <= 1000).Sum(m => SafeParseInt(m));
             }
 
         }
