@@ -1,7 +1,25 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCalculator", "SimpleCalculator\SimpleCalculator.csproj", "{1E138264-6539-47FC-BC29-7BB3E00D5D91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCalculatorTest", "SimpleCalculatorTest\SimpleCalculatorTest.csproj", "{F952DDE7-8E0E-4941-9E12-01D6C22705CC}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E138264-6539-47FC-BC29-7BB3E00D5D91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E138264-6539-47FC-BC29-7BB3E00D5D91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E138264-6539-47FC-BC29-7BB3E00D5D91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E138264-6539-47FC-BC29-7BB3E00D5D91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F952DDE7-8E0E-4941-9E12-01D6C22705CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F952DDE7-8E0E-4941-9E12-01D6C22705CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F952DDE7-8E0E-4941-9E12-01D6C22705CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F952DDE7-8E0E-4941-9E12-01D6C22705CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection

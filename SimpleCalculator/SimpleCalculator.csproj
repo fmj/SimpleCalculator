@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>d0cc674a-6a45-48a9-8090-ef2c58f10bac</ProjectGuid>
+    <ProjectGuid>{1E138264-6539-47FC-BC29-7BB3E00D5D91}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SimpleCalculator</RootNamespace>
@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SimpleCalculator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
