@@ -12,7 +12,7 @@ namespace SimpleCalculator
 
         private const string CDefSeperator = "//";
 
-        public int Add(string calculation)
+        private string NormalizeInput(string calculation)
         {
             //noramlize input
             if (calculation.StartsWith("//"))
@@ -30,6 +30,12 @@ namespace SimpleCalculator
                     seperators.Add(newSep);
                 calculation = calculation.Substring(calculation.IndexOf('\n') + 1);
             }
+            return calculation;
+        }
+
+        public int Add(string calculation)
+        {
+            calculation = NormalizeInput(calculation);
             //do calculation
             if (seperators.Count(c => calculation.IndexOf(c) >= 0) == 0)
             {
